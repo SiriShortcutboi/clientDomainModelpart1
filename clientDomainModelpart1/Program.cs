@@ -4,12 +4,14 @@ public class Program
 {
 	public static void Main()
 	{
-		Console.WriteLine("Hello World");
+		
+        Client myClient = new Client("Chad", "Gigachad@google.com");
+        string GetSummary();//- Displays all info
+        
+        
+        Client myClient();
+        string GetSummary(); //- Displays all info
+        void Deactivate(); //- Sets isActive to false
+
 	}
-}
-
-public class Client()
-{
-    
-
 }

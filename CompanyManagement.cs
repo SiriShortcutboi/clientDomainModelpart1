@@ -32,4 +32,16 @@ public class Client //new class gets curly braces, no activating ()
         IsActive = isActive;
 
     }
+
+    public string GetSummary()
+    {
+        string clientInfo = $" Client: {Name} \nEmail: {Email}" +  
+                $"\nStatus: {IsActive}, \nCreated: {CreatedOn} ";
+        Console.WriteLine(clientInfo);
+    }
+
+    public void Deactivate()
+    {
+        IsActive = false;
+    }
 }
