@@ -37,7 +37,7 @@ public class Client //new class gets curly braces, no activating ()
     {
         string clientInfo = $" Client: {Name} \nEmail: {Email}" +  
                 $"\nStatus: {IsActive}, \nCreated: {CreatedOn} ";
-        Console.WriteLine(clientInfo);
+        return clientInfo;
     }
 
     public void Deactivate()

@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\CompanyManagement.cs" Link="CompanyManagement.cs" />
+  </ItemGroup>
+
 </Project>

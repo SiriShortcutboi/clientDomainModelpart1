@@ -4,14 +4,15 @@ public class Program
 {
 	public static void Main()
 	{
-		
-        Client myClient = new Client("Chad", "Gigachad@google.com");
-        string GetSummary();//- Displays all info
-        
-        
-        Client myClient();
-        string GetSummary(); //- Displays all info
-        void Deactivate(); //- Sets isActive to false
+                Client chad = new Client("Chad", "Gigachad@google.com");
+                Console.WriteLine(chad.GetSummary());
+
+                Client stacy = new Client("Stacy", "BakerStacy@yahoo.com");
+                Console.WriteLine(stacy.GetSummary());
+
+                stacy.Deactivate();
+                Console.WriteLine("After deactivation:");
+                Console.WriteLine(stacy.GetSummary());
 
 	}
 }
