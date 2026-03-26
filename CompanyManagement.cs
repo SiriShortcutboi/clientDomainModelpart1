@@ -1,5 +1,6 @@
 using System.Reflection.Metadata;
 using System.Collections.Generic;
+using System.Data.Common;
 
 namespace CompanyManagement.Models;	
 
@@ -57,11 +58,24 @@ public class ClientRepository()
      Dictionary<Guid, Client> myClientDictionary = new Dictionary<int, string>();
     void addClient(Client client)
     {   
-       myClientDictionary.Add(id, /* client*/);//find the right client ID by guid
+       myClientDictionary.Add(id, bruh/* client*/);//find the right client ID by guid
             //i think i have to use a method like .add to find the
             // right one first and then call add to do it
 
 
+
+        //use something to this effect
+        myClientDictionary.Add(Id, client);
+
+        foreach(var item in myClientDictionary)
+        {
+            Console.WriteLine(item.Value); //value is something you get to use
+                        //its already Available Yay, not invented by you
+        }              // i think it has to remain in foreach tho
+        else
+        {
+            Console.WriteLine(item.Key);// item.Key is the same way
+        }
     }
 
 
