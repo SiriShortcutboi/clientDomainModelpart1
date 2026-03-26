@@ -7,7 +7,7 @@ public class Program
                 Client chad = new Client("Chad ", "Gigachad@google.com");
                 Console.WriteLine(chad.GetSummary());
 
-                Client stacy = new Client("Stacy", "BakerStacy@yahoo.com");
+                Client stacy = new Client("Stacy", " BakerStacy@yahoo.com");
                 Console.WriteLine(stacy.GetSummary());
 
                 stacy.Deactivate();
