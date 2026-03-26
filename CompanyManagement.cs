@@ -35,7 +35,7 @@ public class Client //new class gets curly braces, no activating ()
 
     public string GetSummary()
     {
-        string clientInfo = $" Client: {Name} \nEmail: {Email}" +  
+        string clientInfo = $"  Client: {Name} \nEmail: {Email}" +  
                 $"\nStatus: {IsActive}, \nCreated: {CreatedOn} ";
         return clientInfo;
     }
