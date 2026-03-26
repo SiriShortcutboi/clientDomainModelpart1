@@ -1,3 +1,6 @@
+using System.Reflection.Metadata;
+using System.Collections.Generic;
+
 namespace CompanyManagement.Models;	
 
 public class Client //new class gets curly braces, no activating ()
@@ -44,4 +47,23 @@ public class Client //new class gets curly braces, no activating ()
     {
         IsActive = false;
     }
+}
+
+public class ClientRepository()
+{
+    Namespace Services;
+    
+
+     Dictionary<Guid, Client> myClientDictionary = new Dictionary<int, string>();
+    void addClient(Client client)
+    {   
+       myClientDictionary.Add(id, /* client*/);//find the right client ID by guid
+            //i think i have to use a method like .add to find the
+            // right one first and then call add to do it
+
+
+    }
+
+
+
 }
